@@ -6,7 +6,7 @@
 $ ln -s /path/to/dotfiles/_vimrc ~/.vimrc
 $ ln -s /path/to/dotfiles/_zshrc ~/.zshrc
 $ ln -s /path/to/dotfiles/_zprofile ~/.zprofile
-$ ln -s /path/to/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+$ ln -s /path/to/dotfiles/_wezterm.lua ~/.wezterm.lua
 ```
 
 ## Destop application
