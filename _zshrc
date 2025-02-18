@@ -1,14 +1,16 @@
-# Git branch
-parse_git_branch() {
-    BRANCH=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
-    if [ -n "$BRANCH" ]; then
-        echo " ($BRANCH)"
-    else
-        echo ""
-    fi
-}
 # prompt
-PROMPT="%* %n %~$(parse_git_branch) %% "
+PROMPT="%* %n %~ %% "
+
+# Git branch
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 # Alias
 alias c="clear"
