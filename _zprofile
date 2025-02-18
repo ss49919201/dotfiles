@@ -1,0 +1,25 @@
+# Homebrew
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Go
+export PATH=$PATH:$HOME/go/bin
+
+# Scala
+# by `cs setup`
+# >>> coursier install directory >>>
+export PATH="$PATH:/Users/sakaeshinya/Library/Application Support/Coursier/bin"
+# <<< coursier install directory <<<
+# by `cs setup`
+# >>> JVM installed by coursier >>>
+export JAVA_HOME="/Users/sakaeshinya/Library/Caches/Coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%252B1/OpenJDK11U-jdk_x64_mac_hotspot_11.0.20.1_1.tar.gz/jdk-11.0.20.1+1/Contents/Home"
+# <<< JVM installed by coursier <<<
+
+# volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# ghcup
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
