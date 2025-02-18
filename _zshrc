@@ -1,5 +1,14 @@
+# Git branch
+parse_git_branch() {
+    BRANCH=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+    if [ -n "$BRANCH" ]; then
+        echo " ($BRANCH)"
+    else
+        echo ""
+    fi
+}
 # prompt
-PROMPT="%* %n %~ %% "
+PROMPT="%* %n %~$(parse_git_branch) %% "
 
 # Alias
 alias c="clear"
