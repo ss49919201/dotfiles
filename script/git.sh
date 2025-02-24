@@ -1,5 +1,5 @@
 #!/bin/bash
-git config --global user.name "ss49919201"
+git config --global user.name "Shinya Sakae"
 git config --global user.email "ss49919201@gmail.com"
 git config pull.rebase false
 git config --global core.pager "delta"
