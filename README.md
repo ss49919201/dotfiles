@@ -9,9 +9,23 @@ $ ln -s /path/to/dotfiles/_zprofile ~/.zprofile
 $ ln -s /path/to/dotfiles/_wezterm.lua ~/.wezterm.lua
 ```
 
-## Destop application
+## Desktop application
 
 - https://www.docker.com/products/docker-desktop/
+
+## VSCode
+
+Enable key-repeating.
+
+```bash
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
+defaults write com.vscodium ApplePressAndHoldEnabled -bool false                      # For VS Codium
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
+defaults delete -g ApplePressAndHoldEnabled                                           # If necessary, reset global default
+```
+
+https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
 ## Haskell
 
