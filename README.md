@@ -12,6 +12,7 @@ $ ln -s /path/to/dotfiles/_wezterm.lua ~/.wezterm.lua
 ## Desktop application
 
 - https://www.docker.com/products/docker-desktop/
+- https://claude.ai/download
 
 ## VSCode
 
