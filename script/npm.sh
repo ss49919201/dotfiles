@@ -4,5 +4,5 @@ npm install -g \
 	@nestjs/cli \
 	crv-cli \
 	vlt \
-	codex
-	
+	codex \
+	@anthropic-ai/claude-code
