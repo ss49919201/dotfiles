@@ -3,4 +3,6 @@
 npm install -g \
 	@nestjs/cli \
 	crv-cli \
-	vlt
+	vlt \
+	codex
+	
