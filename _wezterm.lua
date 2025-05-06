@@ -22,4 +22,7 @@ config.keys = {
     {key="RightArrow", mods="CMD|OPT", action=wezterm.action{ActivateTabRelative=1}},
 }
 
+-- Enable typing backslash on Mac
+config.send_composed_key_when_left_alt_is_pressed = true
+
 return config
