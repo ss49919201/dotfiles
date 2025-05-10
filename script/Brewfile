@@ -75,6 +75,7 @@ cask "slack"
 cask "tableplus"
 cask "visual-studio-code"
 cask "wezterm"
+cask "windsurf"
 cask "zoom"
 mas "GarageBand", id: 682658836
 mas "Keynote", id: 409183694

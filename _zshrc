@@ -14,3 +14,6 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 # Alias
 alias c="clear"
+
+# Added by Windsurf
+export PATH="/Users/sakaeshinya/.codeium/windsurf/bin:$PATH"
