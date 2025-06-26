@@ -27,3 +27,12 @@ if has('vim_starting')
     let &t_EI .= "\e[2 q"
     let &t_SR .= "\e[4 q"
 endif
+
+" vim-plug
+call plug#begin()
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+call plug#end()
