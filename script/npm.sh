@@ -5,4 +5,5 @@ npm install -g \
 	crv-cli \
 	vlt \
 	codex \
-	@anthropic-ai/claude-code
+	@anthropic-ai/claude-code \
+	@google/gemini-cli
