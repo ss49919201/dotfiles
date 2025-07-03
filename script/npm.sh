@@ -6,4 +6,5 @@ npm install -g \
 	vlt \
 	codex \
 	@anthropic-ai/claude-code \
-	@google/gemini-cli
+	@google/gemini-cli \
+	ccusage@latest
