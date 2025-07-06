@@ -17,3 +17,6 @@ alias c="clear"
 
 # Added by Windsurf
 export PATH="/Users/sakaeshinya/.codeium/windsurf/bin:$PATH"
+
+# mise
+eval "$(/opt/homebrew/bin/mise activate zsh)"
