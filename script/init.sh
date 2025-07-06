@@ -6,7 +6,6 @@ set -e
 ./git.sh
 ./vim.sh
 ./neovim.sh
-./volta.sh
 ./npm.sh
 ./go_cmd.sh
 ./rust.sh
