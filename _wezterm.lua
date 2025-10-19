@@ -8,7 +8,24 @@ end
 
 -- Color
 config.color_scheme = "nord"
+
+-- Window
 config.window_background_opacity = 0.8
+config.colors = {
+	tab_bar = {
+			background = "none",
+	},
+}
+config.window_background_gradient = {
+	colors = {
+			"#395063",
+	}
+}
+
+-- Tab
+config.use_fancy_tab_bar = false
+
+config.window_decorations = "RESIZE"
 
 -- Font
 config.font = wezterm.font("UDEV Gothic", {weight="Medium", stretch="Normal", style="Normal"})  
