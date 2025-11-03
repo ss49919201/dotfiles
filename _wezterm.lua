@@ -18,7 +18,7 @@ config.colors = {
 }
 config.window_background_gradient = {
 	colors = {
-			"#000033",
+			"#000011",
 	}
 }
 
@@ -26,15 +26,27 @@ config.window_background_gradient = {
 config.use_fancy_tab_bar = false
 
 -- Font
-config.font = wezterm.font("UDEV Gothic", {weight="Medium", stretch="Normal", style="Normal"})  
+config.font = wezterm.font("UDEV Gothic", {
+		weight = "Medium",
+		stretch="Normal",
+		style="Normal"
+})  
 config.font_size = 14
 
 config.keys = {
 	-- Swtich tab
 	-- Same as in Chrome
     -- mac
-    {key="LeftArrow", mods="CMD|OPT", action=wezterm.action{ActivateTabRelative=-1}},
-    {key="RightArrow", mods="CMD|OPT", action=wezterm.action{ActivateTabRelative=1}},
+    {
+			key="LeftArrow",
+			mods="CMD|OPT",
+			action=wezterm.action{ActivateTabRelative=-1}
+	},
+    {
+			key="RightArrow",
+			mods="CMD|OPT",
+			action=wezterm.action{ActivateTabRelative=1}
+	},
 }
 
 -- Enable typing backslash on Mac
