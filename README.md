@@ -7,7 +7,8 @@ $ ln -s /path/to/dotfiles/_vimrc ~/.vimrc
 $ ln -s /path/to/dotfiles/_zshrc ~/.zshrc
 $ ln -s /path/to/dotfiles/_zprofile ~/.zprofile
 $ ln -s /path/to/dotfiles/_wezterm.lua ~/.wezterm.lua
-$ ln -s /path/to/dotfiles/nvim ~/.config
+$ ln -s /path/to/dotfiles/nvim ~/.config/nvim
+$ ln -s /path/to/dotfiles/ghostty/config ~/.config/ghostty/config
 ```
 
 ## Desktop application
