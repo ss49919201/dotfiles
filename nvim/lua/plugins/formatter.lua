@@ -16,6 +16,7 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       sh = { "shfmt" },
+      go = { "goimports", "gofmt" },
     },
     -- 保存時に自動フォーマット
     format_on_save = {
