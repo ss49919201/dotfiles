@@ -13,7 +13,7 @@ return {
     dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "gopls" },
+        ensure_installed = { "lua_ls", "gopls", "ts_ls" },
         -- インストール後に自動でLSPを設定
         handlers = {
           function(server_name)
@@ -78,6 +78,7 @@ return {
           "stylua",
           "shfmt",
           "goimports",
+          "prettierd",
         },
       })
     end,

@@ -2,7 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
-    local parsers = { "lua", "go", "gomod", "gosum" }
+    local parsers = { "lua", "go", "gomod", "gosum", "typescript", "tsx", "javascript" }
 
     -- パーサーのインストール
     require("nvim-treesitter").install(parsers)

@@ -17,6 +17,10 @@ return {
       lua = { "stylua" },
       sh = { "shfmt" },
       go = { "goimports", "gofmt" },
+      typescript = { "prettierd" },
+      typescriptreact = { "prettierd" },
+      javascript = { "prettierd" },
+      javascriptreact = { "prettierd" },
     },
     -- 保存時に自動フォーマット
     format_on_save = {
