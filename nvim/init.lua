@@ -39,3 +39,34 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }) -- フローティング�
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" }) -- 非アクティブウィンドウ
 vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" }) -- サイン列
 vim.api.nvim_set_hl(0, "LineNr", { bg = "none" }) -- 行番号
+
+-- ========================================
+-- インデント設定（デフォルト）
+-- ========================================
+vim.opt.expandtab = true -- タブをスペースに変換
+vim.opt.tabstop = 4 -- タブ幅
+vim.opt.shiftwidth = 4 -- 自動インデント幅
+vim.opt.softtabstop = 4 -- <Tab>キーで挿入されるスペース数
+
+-- ========================================
+-- ファイルタイプ別インデント設定
+-- ========================================
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "lua", "javascript", "typescript", "typescriptreact", "javascriptreact", "json", "html", "css", "yaml" },
+	callback = function()
+		vim.opt_local.tabstop = 2
+		vim.opt_local.shiftwidth = 2
+		vim.opt_local.softtabstop = 2
+		vim.opt_local.expandtab = true -- スペースを使用
+	end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "go", "make" },
+	callback = function()
+		vim.opt_local.tabstop = 4
+		vim.opt_local.shiftwidth = 4
+		vim.opt_local.softtabstop = 4
+		vim.opt_local.expandtab = false -- タブ文字を使用
+	end,
+})
