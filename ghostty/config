@@ -1,2 +1,3 @@
- background-opacity = 0.9
+ background-opacity = 0.8
  font-family = "Monaco"
+ macos-titlebar-proxy-icon = hidden
