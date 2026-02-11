@@ -2,6 +2,8 @@
 
 ## Symbolic link
 
+> **Note:** 以下のコマンドは dotfiles を `~/src/dotfiles` に配置している個人環境のパスです。各自のクローン先に合わせて読み替えてください。
+
 ```bash
 $ ln -s ~/src/dotfiles/_vimrc ~/.vimrc
 $ ln -s ~/src/dotfiles/_zshrc ~/.zshrc
