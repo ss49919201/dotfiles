@@ -3,12 +3,13 @@
 ## Symbolic link
 
 ```bash
-$ ln -s /path/to/dotfiles/_vimrc ~/.vimrc
-$ ln -s /path/to/dotfiles/_zshrc ~/.zshrc
-$ ln -s /path/to/dotfiles/_zprofile ~/.zprofile
-$ ln -s /path/to/dotfiles/_wezterm.lua ~/.wezterm.lua
-$ ln -s /path/to/dotfiles/nvim ~/.config/nvim
-$ ln -s /path/to/dotfiles/ghostty/config ~/.config/ghostty/config
+$ ln -s ~/src/dotfiles/_vimrc ~/.vimrc
+$ ln -s ~/src/dotfiles/_zshrc ~/.zshrc
+$ ln -s ~/src/dotfiles/_zprofile ~/.zprofile
+$ ln -s ~/src/dotfiles/_wezterm.lua ~/.wezterm.lua
+$ ln -s ~/src/dotfiles/nvim ~/.config/nvim
+$ ln -s ~/src/dotfiles/lazyvim ~/.config/nvim
+$ ln -s ~/src/dotfiles/ghostty/config ~/.config/ghostty/config
 ```
 
 ## Desktop application
