@@ -1,4 +1,4 @@
-# prompt
+# Prompt
 PROMPT="%* %n %~ %% "
 
 # Git branch

@@ -1,3 +1,6 @@
 [submodule "lazyvim"]
 	path = lazyvim
 	url = git@github.com:ss49919201/starter.git
+[submodule "nvchad"]
+	path = nvchad
+	url = git@github.com:ss49919201/nvchad-starter.git
