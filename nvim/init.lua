@@ -70,3 +70,24 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.expandtab = false -- タブ文字を使用
 	end,
 })
+
+-- ========================================
+-- LSP 診断表示設定
+-- ========================================
+vim.diagnostic.config({
+	virtual_text = {
+		spacing = 4,
+		format = function(diagnostic)
+			local msg = diagnostic.message
+			local max_width = 60
+			if #msg > max_width then
+				return msg:sub(1, max_width - 3) .. "..."
+			end
+			return msg
+		end,
+	},
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true,
+})
