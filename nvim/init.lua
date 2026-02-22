@@ -1,3 +1,4 @@
+-- lazy.nvim のセットアップを読み込む（プラグイン管理）
 require("config.lazy")
 
 -- 行番号を表示
@@ -51,22 +52,25 @@ vim.opt.softtabstop = 4 -- <Tab>キーで挿入されるスペース数
 -- ========================================
 -- ファイルタイプ別インデント設定
 -- ========================================
+
+-- Web 系・設定ファイルはインデント幅 2 スペース
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "lua", "javascript", "typescript", "typescriptreact", "javascriptreact", "json", "html", "css", "yaml" },
 	callback = function()
-		vim.opt_local.tabstop = 2
-		vim.opt_local.shiftwidth = 2
-		vim.opt_local.softtabstop = 2
+		vim.opt_local.tabstop = 2 -- タブ幅を 2 に
+		vim.opt_local.shiftwidth = 2 -- 自動インデント幅を 2 に
+		vim.opt_local.softtabstop = 2 -- <Tab>キーで挿入されるスペース数を 2 に
 		vim.opt_local.expandtab = true -- スペースを使用
 	end,
 })
 
+-- Go・Makefile はインデント幅 4 のタブ文字（言語の慣習に従う）
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "go", "make" },
 	callback = function()
-		vim.opt_local.tabstop = 4
-		vim.opt_local.shiftwidth = 4
-		vim.opt_local.softtabstop = 4
+		vim.opt_local.tabstop = 4 -- タブ幅を 4 に
+		vim.opt_local.shiftwidth = 4 -- 自動インデント幅を 4 に
+		vim.opt_local.softtabstop = 4 -- <Tab>キーで挿入されるスペース数を 4 に
 		vim.opt_local.expandtab = false -- タブ文字を使用
 	end,
 })
@@ -76,18 +80,19 @@ vim.api.nvim_create_autocmd("FileType", {
 -- ========================================
 vim.diagnostic.config({
 	virtual_text = {
-		spacing = 4,
+		spacing = 4, -- コードとメッセージの間のスペース数
 		format = function(diagnostic)
 			local msg = diagnostic.message
-			local max_width = 60
+			local max_width = 60 -- 最大表示文字数
+			-- 長いメッセージは省略して末尾に ... を付ける
 			if #msg > max_width then
 				return msg:sub(1, max_width - 3) .. "..."
 			end
 			return msg
 		end,
 	},
-	signs = true,
-	underline = true,
-	update_in_insert = false,
-	severity_sort = true,
+	signs = true, -- サイン列にエラー・警告アイコンを表示
+	underline = true, -- 問題箇所に下線を引く
+	update_in_insert = false, -- 挿入モード中は診断を更新しない（パフォーマンス向上）
+	severity_sort = true, -- 重大度（error > warn > info > hint）の順に並べる
 })
