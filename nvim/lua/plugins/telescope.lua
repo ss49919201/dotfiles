@@ -2,7 +2,7 @@ return {
   {
     -- telescope.nvim: ファジーファインダー（ファイル・文字列・バッファなどを検索するUI）
     "nvim-telescope/telescope.nvim",
-    tag = "0.1.8", -- 使用するバージョンを固定
+    tag = "v0.2.1", -- 使用するバージョンを固定
     dependencies = {
       "nvim-lua/plenary.nvim", -- Telescope が依存する汎用 Lua ライブラリ
       -- パフォーマンス向上のためのネイティブソーター
