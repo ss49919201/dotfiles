@@ -21,26 +21,12 @@ return {
           layout_strategy = "horizontal", -- 左にリスト、右にプレビューの横並びレイアウト
           layout_config = {
             horizontal = {
+              width = 0.95,        -- ウィンドウ幅を画面の 95% に設定
               preview_width = 0.5, -- プレビュー欄をウィンドウ幅の 50% に設定
             },
           },
-          -- 無視するファイル・ディレクトリ（検索対象から除外）
-          file_ignore_patterns = {
-            "node_modules", -- Node.js の依存ライブラリ
-            ".git/",        -- Git の内部ディレクトリ
-            "%.lock",       -- ロックファイル（package-lock.json など）
-          },
         },
-        pickers = {
-          find_files = {
-            hidden = true, -- 隠しファイル（ドットファイル）も検索対象に含める
-          },
-          live_grep = {
-            additional_args = function()
-              return { "--hidden" } -- 隠しファイルも grep 対象に含める
-            end,
-          },
-        },
+        pickers = {},
       })
 
       -- fzf-native 拡張を読み込み（パフォーマンス向上）
