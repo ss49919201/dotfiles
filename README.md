@@ -12,6 +12,7 @@ $ ln -s ~/src/dotfiles/_wezterm.lua ~/.wezterm.lua
 $ ln -s ~/src/dotfiles/nvim ~/.config/nvim
 $ ln -s ~/src/dotfiles/lazyvim ~/.config/nvim
 $ ln -s ~/src/dotfiles/ghostty/config ~/.config/ghostty/config
+$ ln -s ~/src/dotfiles/_ideavimrc ~/.ideavimrc
 ```
 
 ## Desktop application
