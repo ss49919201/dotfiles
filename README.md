@@ -5,14 +5,13 @@
 > **Note:** 以下のコマンドは dotfiles を `~/src/dotfiles` に配置している個人環境のパスです。各自のクローン先に合わせて読み替えてください。
 
 ```bash
-$ ln -s ~/src/dotfiles/_vimrc ~/.vimrc
-$ ln -s ~/src/dotfiles/_zshrc ~/.zshrc
-$ ln -s ~/src/dotfiles/_zprofile ~/.zprofile
-$ ln -s ~/src/dotfiles/_wezterm.lua ~/.wezterm.lua
-$ ln -s ~/src/dotfiles/nvim ~/.config/nvim
-$ ln -s ~/src/dotfiles/lazyvim ~/.config/nvim
-$ ln -s ~/src/dotfiles/ghostty/config ~/.config/ghostty/config
-$ ln -s ~/src/dotfiles/_ideavimrc ~/.ideavimrc
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/_vimrc ~/.vimrc
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/_zshrc ~/.zshrc
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/_zprofile ~/.zprofile
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/_wezterm.lua ~/.wezterm.lua
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/nvim ~/.config/nvim
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/ghostty/config ~/.config/ghostty/config
+$ ln -s ~/ghq/github.com/ss49919201/dotfiles/_ideavimrc ~/.ideavimrc
 ```
 
 ## Desktop application
