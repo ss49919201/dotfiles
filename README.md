@@ -2,7 +2,7 @@
 
 ## Symbolic link
 
-> **Note:** 以下のコマンドは dotfiles を `~/src/dotfiles` に配置している個人環境のパスです。各自のクローン先に合わせて読み替えてください。
+> **Note:** 以下のコマンドは dotfiles を `~/ghq/github.com/ss49919201/dotfiles` に配置している個人環境のパスです。各自のクローン先に合わせて読み替えてください。
 
 ```bash
 $ ln -s ~/ghq/github.com/ss49919201/dotfiles/_vimrc ~/.vimrc

@@ -1,5 +1,5 @@
  background-opacity = 1.0
  background = #25363B
- font-family = "Monaco"
+ font-family = JetBrains Mono
  macos-titlebar-proxy-icon = hidden
  macos-option-as-alt = true
