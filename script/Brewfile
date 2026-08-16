@@ -9,89 +9,166 @@ tap "ngrok/ngrok"
 tap "oven-sh/bun"
 tap "snyk/tap"
 tap "songmu/tap"
-tap "virtuslab/scala-cli"
+tap "virtuslab/scala-cli", "https://github.com/Virtuslab/homebrew-scala-cli"
+# Run your GitHub Actions locally
 brew "act"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Core application library for C
 brew "glib"
+# Vector graphics library with cross-device output support
 brew "cairo"
+# C parser in Python
 brew "pycparser"
+# C Foreign Function Interface for Python
 brew "cffi"
+# Creates slide deck using Markdown and Google Slides
 brew "deck"
+# Debugger for the Go programming language
 brew "delve"
+# Text processing system for reStructuredText
 brew "docutils"
+# Embeddable SQL OLAP Database Management System
 brew "duckdb"
+# TIFF library and utilities
 brew "libtiff"
+# Cross-platform C++ GUI toolkit
 brew "wxwidgets"
+# Programming language for highly scalable real-time systems
 brew "erlang"
+# Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# Remote repository management made easy
 brew "ghq"
+# Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Validating, recursive, caching DNS resolver
 brew "unbound"
+# GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Task is a task runner/build tool that aims to be simpler and easier to use
 brew "go-task"
+# OpenType text shaping engine
 brew "harfbuzz"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Little helper to run CNCF's k3s in Docker
+brew "k3d"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# Simple terminal UI for git commands
 brew "lazygit"
+# Color management engine supporting ICC profiles
 brew "little-cms2"
+# Mac App Store command-line interface
 brew "mas"
+# Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Open source relational database management system
 brew "mysql"
+# Node version management
 brew "n"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Pins GitHub Actions to full hashes and versions
 brew "pinact"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Rust toolchain installer
 brew "rustup"
+# Build tool for Scala projects
 brew "sbt"
+# Create beautiful image of your source code
 brew "silicon"
+# Scans and monitors projects for security vulnerabilities
 brew "snyk-cli"
+# Terraform version manager inspired by rbenv
 brew "tfenv"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Incremental parsing library
 brew "tree-sitter"
+# Parser generator tool
 brew "tree-sitter-cli"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Watch files and take action when they change
 brew "watchman"
+# JavaScript package manager
 brew "yarn"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
-brew "clojure/tools/clojure"
-brew "coursier/formulas/coursier"
-brew "fujiwara/tap/lambroll"
-brew "hashicorp/tap/terraform-ls"
-brew "songmu/tap/laminate"
-brew "virtuslab/scala-cli/scala-cli"
+# Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault-binary"
+# OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Terminal-based AI coding assistant
 cask "claude-code"
+# Clipboard extension app
 cask "clipy"
+# Terminal emulator
 cask "contour"
+# Write, edit, and chat about your code with AI
 cask "cursor"
+# AI-powered translator
 cask "deepl"
+# Agentic IDE with AI agent command center
+cask "devin-desktop"
+# Web browser
 cask "firefox"
 cask "font-fira-code"
 cask "font-hackgen"
 cask "font-hackgen-nerd"
 cask "font-udev-gothic"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Keyboard customiser
 cask "karabiner-elements"
+# Blocks all Keyboard and TouchBar input
 cask "keyboardcleantool"
+# Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
+# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# App to write, plan, collaborate, and get organised
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Collaboration platform for API development
 cask "postman"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
+# Team communication and collaboration software
 cask "slack"
+# Native GUI tool for relational databases
 cask "tableplus"
+# Open-source code editor
 cask "visual-studio-code"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-cask "windsurf"
+# Video communication and virtual meeting platform
 cask "zoom"
 mas "GarageBand", id: 682658836
 mas "Keynote", id: 409183694
@@ -106,10 +183,9 @@ vscode "dbaeumer.vscode-eslint"
 vscode "docker.docker"
 vscode "esbenp.prettier-vscode"
 vscode "firsttris.vscode-jest-runner"
-vscode "github.copilot"
-vscode "github.copilot-chat"
 vscode "golang.go"
 vscode "haskell.haskell"
+vscode "haskell.language-haskell"
 vscode "janisdd.vscode-edit-csv"
 vscode "justusadam.language-haskell"
 vscode "kingwl.vscode-vitest-runner"
@@ -135,3 +211,11 @@ vscode "vscodevim.vim"
 vscode "yoavbls.pretty-ts-errors"
 go "cmd/go"
 go "cmd/gofmt"
+npm "@google/gemini-cli"
+npm "@nestjs/cli"
+npm "@openai/codex"
+npm "ccusage"
+npm "codex"
+npm "corepack"
+npm "crv-cli"
+npm "vlt"

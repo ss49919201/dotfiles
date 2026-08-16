@@ -7,3 +7,4 @@ cs setup
 
 cs install scala3-compiler
 cs install scala3
+cs install metals
